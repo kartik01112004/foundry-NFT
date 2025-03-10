@@ -1,66 +1,34 @@
-## Foundry
+# NFT
 
-**Foundry is a blazing fast, portable and modular toolkit for Ethereum application development written in Rust.**
+# Non Fungible Token(ERC-721)
 
-Foundry consists of:
+Eg: Pokemon
 
--   **Forge**: Ethereum testing framework (like Truffle, Hardhat and DappTools).
--   **Cast**: Swiss army knife for interacting with EVM smart contracts, sending transactions and getting chain data.
--   **Anvil**: Local Ethereum node, akin to Ganache, Hardhat Network.
--   **Chisel**: Fast, utilitarian, and verbose solidity REPL.
+- Each card is unique
+- Can't be replaced with another card
+- Has its own attributes
+- Can be bought/sold
+- Can be stored in a wallet
+- Can be transferred to another wallet
+- Can be used in a game
+  etc... etc..
 
-## Documentation
+## Semi-fungible token (ERC-1155)
 
-https://book.getfoundry.sh/
+## Difference b/w ERC20 and ERC721
 
-## Usage
+ERC20 are simple, they simply map the amount of tokens to the address of the holder
 
-### Build
+721 have unique token ids these token ids have unique owner and they have a token URI
 
-```shell
-$ forge build
-```
+so each token is unique and represents a unique asset so as they are unique we need to difine the attributes of that unique asset just like a pokemon has differnt stats and a unique trainer which makes that unique
 
-### Test
+### Metadata
 
-```shell
-$ forge test
-```
+- onchain metadata
+- ofchain metadata
 
-### Format
+### Toekn URI
 
-```shell
-$ forge fmt
-```
-
-### Gas Snapshots
-
-```shell
-$ forge snapshot
-```
-
-### Anvil
-
-```shell
-$ anvil
-```
-
-### Deploy
-
-```shell
-$ forge script script/Counter.s.sol:CounterScript --rpc-url <your_rpc_url> --private-key <your_private_key>
-```
-
-### Cast
-
-```shell
-$ cast <subcommand>
-```
-
-### Help
-
-```shell
-$ forge --help
-$ anvil --help
-$ cast --help
-```
+Uniform Resource Identifier : tells all there is to know about a token.
+can say its just an api call
